@@ -99,6 +99,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ## Known Bugs
 
 * When pints are decrimented on a keg, it moves to the bottom of the keg list
+* Incomplete Redux integration
 
 ## Support and contact details
 
