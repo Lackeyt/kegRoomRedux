@@ -10,7 +10,7 @@
 
 ## Description
 
-This react app is built based on the following diagram. Users are able to add new keg records and details which are displayed in a list. List items can be selected which display the keg details where they can be deleted, or pints can be sold. If pints reach 0, they will stop decrimenting and remain empty.
+This react app is built based on the following diagram. Users are able to add new keg records and details which are displayed in a list. List items can be selected which display the keg details where they can be deleted, or pints can be sold. If pints reach 0, they will stop decrimenting and remain empty. Redux integrated to handle state changes.
 
 ![tapRoomDiagram](./public/tapRoomDiagram.png)
 
