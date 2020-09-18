@@ -2,6 +2,19 @@ import kegListReducer from '../../reducers/keg-list-reducer';
 
 describe('kegListReducer', () => {
 
+  const currentState = {
+    1: {name: 'keg1',
+    brand: 'brand1',
+    price: '5',
+    alcoholContent: '3',
+    pintsRemaining: 124},
+    2: {name: 'keg2',
+    brand: 'brand2',
+    price: '6',
+    alcoholContent: '7%',
+    pintsRemaining: 124}
+  }
+
   let action;
   const kegData = {
     name: "keg1",
@@ -34,6 +47,20 @@ describe('kegListReducer', () => {
         alcoholContent: alcoholContent,
         pintsRemaining: pintsRemaining
       }
+    });
+  });
+
+  test('Should successfully delete a keg', () => {
+    action ={
+      type: 'DELETE_KEG',
+      name: 'keg1'
+    };
+    expect(kegListReducer(currentState, action)).toEqual({
+      2: {name: 'keg2',
+    brand: 'brand2',
+    price: '6',
+    alcoholContent: '7%',
+    pintsRemaining: 124}
     });
   });
 });
